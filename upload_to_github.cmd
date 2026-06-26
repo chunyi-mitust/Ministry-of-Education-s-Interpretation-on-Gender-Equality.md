@@ -3,7 +3,7 @@ setlocal
 
 cd /d "%~dp0"
 
-set "REPO_URL=https://github.com/chunyi-mitust/Ministry-me-InterginEducation-.git"
+set "REPO_URL=https://github.com/chunyi-mitust/Ministry-of-Education-s-Interpretation-on-Gender-Equality.md.git"
 set "BRANCH=main"
 
 echo.
