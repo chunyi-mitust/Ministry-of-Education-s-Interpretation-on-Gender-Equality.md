@@ -7,9 +7,12 @@ set "REPO_URL=https://github.com/chunyi-mitust/Ministry-of-Education-s-Interpret
 set "BRANCH=main"
 
 echo.
-echo === Upload database to GitHub ===
+echo === Replace GitHub repo with current folder ===
 echo Current folder: %CD%
 echo Target repo: %REPO_URL%
+echo.
+echo WARNING: This script treats the current folder as the source of truth.
+echo Files that exist on GitHub but not in this folder will be removed from GitHub.
 echo.
 
 git --version >nul 2>&1
@@ -35,53 +38,33 @@ if errorlevel 1 (
 )
 
 echo.
-echo Staging files...
+echo Staging current folder...
 git add --all
 
 git diff --cached --quiet
 if errorlevel 1 (
-  git commit -m "Sync latest database files"
+  git commit -m "Replace GitHub with current database"
 ) else (
   echo No new changes to commit.
 )
 
 echo.
-echo Syncing latest changes from GitHub...
-git fetch origin %BRANCH%
-if errorlevel 1 (
-  echo.
-  echo Could not fetch the latest GitHub branch.
-  echo Please check your network connection, GitHub login, and repository access.
-  pause
-  exit /b 1
-)
-
-git rebase origin/%BRANCH%
-if errorlevel 1 (
-  echo.
-  echo GitHub has changes that could not be merged automatically.
-  echo Please ask Codex to help resolve the Git rebase conflict, then run this file again.
-  pause
-  exit /b 1
-)
-
-echo.
-echo Uploading to GitHub...
-git push -u origin %BRANCH%
+echo Force uploading current folder to GitHub...
+git push --force -u origin %BRANCH%
 if errorlevel 1 (
   echo.
   echo Upload failed. Common causes:
   echo 1. You are not signed in to GitHub.
   echo 2. Your GitHub account does not have write access to this repository.
   echo 3. GitHub asks you to sign in with a browser or a Personal Access Token.
-  echo 4. The remote branch changed again while this script was running.
+  echo 4. Branch protection on GitHub blocks force pushes.
   echo.
-  echo After fixing the login or access issue, run this file again.
+  echo After fixing the login, access, or branch protection issue, run this file again.
   pause
   exit /b 1
 )
 
 echo.
-echo Done. Uploaded to:
+echo Done. GitHub now matches the current folder:
 echo %REPO_URL%
 pause
