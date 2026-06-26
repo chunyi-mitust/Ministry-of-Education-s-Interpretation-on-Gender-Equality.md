@@ -1,0 +1,4 @@
+# Only needed to re-build law/local-rule notes from the source PDFs
+# (99_維護/process_obsidian_vault.py). The crawler and boilerplate stripper
+# use only the Python standard library.
+pdfplumber>=0.11

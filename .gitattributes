@@ -1,0 +1,12 @@
+# Normalize line endings to LF for text
+* text=auto eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+
+# Binary
+*.pdf binary
+
+# Help GitHub language stats treat this as a docs/data repo, not code
+*.md linguist-documentation
+99_維護/*.py linguist-detectable=true
