@@ -40,7 +40,7 @@ git add --all
 
 git diff --cached --quiet
 if errorlevel 1 (
-  git commit -m "Update database"
+  git commit -m "Sync latest database files"
 ) else (
   echo No new changes to commit.
 )
