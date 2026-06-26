@@ -46,17 +46,37 @@ if errorlevel 1 (
 )
 
 echo.
+echo Syncing latest changes from GitHub...
+git fetch origin %BRANCH%
+if errorlevel 1 (
+  echo.
+  echo Could not fetch the latest GitHub branch.
+  echo Please check your network connection, GitHub login, and repository access.
+  pause
+  exit /b 1
+)
+
+git rebase origin/%BRANCH%
+if errorlevel 1 (
+  echo.
+  echo GitHub has changes that could not be merged automatically.
+  echo Please ask Codex to help resolve the Git rebase conflict, then run this file again.
+  pause
+  exit /b 1
+)
+
+echo.
 echo Uploading to GitHub...
 git push -u origin %BRANCH%
 if errorlevel 1 (
   echo.
   echo Upload failed. Common causes:
-  echo 1. The GitHub repository has not been created yet.
-  echo 2. You are not signed in to GitHub.
-  echo 3. Your GitHub account does not have write access to this repository.
-  echo 4. GitHub asks you to sign in with a browser or a Personal Access Token.
+  echo 1. You are not signed in to GitHub.
+  echo 2. Your GitHub account does not have write access to this repository.
+  echo 3. GitHub asks you to sign in with a browser or a Personal Access Token.
+  echo 4. The remote branch changed again while this script was running.
   echo.
-  echo After fixing the GitHub setting or login, run this file again.
+  echo After fixing the login or access issue, run this file again.
   pause
   exit /b 1
 )
