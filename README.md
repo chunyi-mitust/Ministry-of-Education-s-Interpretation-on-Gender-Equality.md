@@ -4,8 +4,11 @@
 
 下載資料夾後，可直接用 AI agent 掛載整個資料夾作為知識庫；也可以將 `函釋按年份整理/` 內依年份彙整的 Markdown 檔匯入 NotebookLM，建立年份脈絡清楚的查詢資料庫。
 
+<img width="3831" height="2088" alt="image" src="https://github.com/user-attachments/assets/e3008cb3-5abe-4073-b498-2ea648d2fd0b" />
+
+
 <img width="3837" height="2080" alt="image" src="https://github.com/user-attachments/assets/a7d8e42f-4f0c-45e4-96ed-8d1c229dc775" />
-![Uploading image.png…]()
+
 
 ## 如何使用
 
