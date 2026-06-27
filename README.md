@@ -21,16 +21,6 @@
 
 不使用 Obsidian 也可以——所有內容都是純 Markdown，可直接在 GitHub 或任何編輯器閱讀，`[[雙向連結]]` 為 Obsidian 語法。
 
-## 維護腳本（`99_維護/`）
-需 Python 3.10+。於資料庫**根目錄**執行：
-
-```bash
-pip install -r requirements.txt          # 只有 PDF 重建需要 pdfplumber
-python 99_維護/process_obsidian_vault.py  # 重建索引、概念頁、時間軸、關聯表、frontmatter
-python 99_維護/strip_boilerplate.py       # 精簡函釋正文（預設 dry-run，加 --apply 才寫入）
-python 99_維護/crawl_catalog_diff.py      # 比對教育部官方函釋目錄，列出本庫尚缺的函釋
-```
-三支腳本皆具冪等性；新增函釋 Markdown 後，依序跑 `process_obsidian_vault.py` 與 `strip_boilerplate.py --apply` 即可整併。
 ## 資料來源
 - 教育部性別平等教育全球資訊網「函釋目錄」(<https://www.gender.edu.tw>)
 - 全國法規資料庫、教育部主管法規共用系統等公開法規來源
