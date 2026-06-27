@@ -4,7 +4,7 @@
 
 以教育部性平資料庫中24頁共345份函釋主體，輔以相關法規與受控概念詞表，以及收錄部分函釋中提到其他函釋與相關法規(地區教育單位函釋未收錄)，並且於函釋間建立Obsidian、函釋與概念/法規之間的雙向連結，方便依主題或時間脈絡查找。
 
-下載資料夾後，可直接用 AI agent 掛載整個資料夾作為知識庫；也可以將 `函釋按年份整理/` 內依年份彙整的 Markdown 檔匯入 NotebookLM，建立年份脈絡清楚的查詢資料庫。
+下載資料夾後，可直接用 AI agent 掛載整個資料夾作為知識庫；也可以將 `函釋按年份整理/` 內依年份彙整的 Markdown 檔匯入 NotebookLM，建立查詢資料庫。
 
 <img width="3831" height="2088" alt="image" src="https://github.com/user-attachments/assets/e3008cb3-5abe-4073-b498-2ea648d2fd0b" />
 
