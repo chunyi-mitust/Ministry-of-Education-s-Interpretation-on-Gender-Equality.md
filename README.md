@@ -1,3 +1,12 @@
+# 如何下載
+1.點擊圖片中右上角的綠色<>Code按鈕
+
+<img width="1673" height="1395" alt="圖片" src="https://github.com/user-attachments/assets/1f795bbc-6bf5-4f43-9347-6c63d7091df6" />
+
+2.點擊 Download ZIP
+<img width="720" height="768" alt="圖片" src="https://github.com/user-attachments/assets/f8aa106e-5df9-46da-8805-e6766bddeffb" />
+
+
 # 性平函釋資料庫
 校園性別平等教育資訊網相關**函釋、法規與概念**的 [Obsidian](https://obsidian.md) 知識庫。全資料庫以markdown格式處理，並且使用OCR處理早期為圖檔的函釋
 
