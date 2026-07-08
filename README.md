@@ -12,20 +12,29 @@
 <img width="3837" height="2080" alt="image" src="https://github.com/user-attachments/assets/a7d8e42f-4f0c-45e4-96ed-8d1c229dc775" />
 
 
-## 如何使用
-
+## 如何使用[Obsidian]
 1. 安裝 [Obsidian](https://obsidian.md)。
 2. 「Open folder as vault」選擇本資料夾。
 3. 從 `00_總覽/性平知識庫總覽` 進入，或用概念頁、函釋時間軸、`函釋按年份整理/` 瀏覽。
 4. 若要給 AI 工具使用，可掛載整個資料夾；若只需要快速問答，可優先匯入 `函釋按年份整理/` 的年度彙整檔。
 
-不使用 Obsidian 也可以——所有內容都是純 Markdown，可直接在 GitHub 或任何編輯器閱讀，`[[雙向連結]]` 為 Obsidian 語法。
+## 如何使用[NotebookLM]
+1.擁有Google的NotebookLM使用權限
+2.於NotebookLM創建頁面創建[新的筆記本[
+<img width="520" height="418" alt="圖片" src="https://github.com/user-attachments/assets/5261b837-9110-4191-956d-846c25b0a006" />
+3.上傳檔案中選擇 `函釋按年份整理/` 資料夾的所有東西上傳
+<img width="1217" height="990" alt="圖片" src="https://github.com/user-attachments/assets/89538305-a96f-44b9-a529-6b1e93943968" />
+<img width="1387" height="1404" alt="圖片" src="https://github.com/user-attachments/assets/bafd7a5d-bd49-4b69-93d2-316dd5bd68d2" />
+4.於[NotebookLM]的對話框中詢問相關內容即可，亦可把性平相關法規、校內法規加入，建立專屬知識庫
+
+## 其他AI工具使用方式
+1.在可建立專屬AI應用的功能(chatgpt為專案 claude為projects)上傳 `函釋按年份整理/`中檔案以及法規、校內法規加入
 
 ## 資料來源
 - 教育部性別平等教育全球資訊網「函釋目錄」(<https://www.gender.edu.tw>)
 - 全國法規資料庫、教育部主管法規共用系統等公開法規來源
 
 ## 著作權與授權
-- **函釋與法規本文**屬政府公文，依《著作權法》第 9 條不得為著作權之標的，本即可自由使用。
+- **函釋與法規本文**屬政府公文，依《著作權法》第 9 條不得為著作權之標的。
 - 本專案的**整理、結構、概念詞表與維護腳本**以 [MIT License](LICENSE) 釋出。
 - 資料由公開來源整理，OCR 與人工編修可能有誤；正式引用請以官方原文為準，本庫僅供檢索參考。
