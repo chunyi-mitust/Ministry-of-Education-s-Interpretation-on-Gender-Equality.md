@@ -1,16 +1,9 @@
 # 性平函釋資料庫
-
 校園性別平等教育資訊網相關**函釋、法規與概念**的 [Obsidian](https://obsidian.md) 知識庫。全資料庫以markdown格式處理，並且使用OCR處理早期為圖檔的函釋
-
 以教育部性平資料庫中24頁共345份函釋主體，輔以相關法規與受控概念詞表，以及收錄部分函釋中提到其他函釋與相關法規(地區教育單位函釋未收錄)，並且於函釋間建立Obsidian、函釋與概念/法規之間的雙向連結，方便依主題或時間脈絡查找。
-
 下載資料夾後，可直接用 AI agent 掛載整個資料夾作為知識庫；也可以將 `函釋按年份整理/` 內依年份彙整的 Markdown 檔匯入 NotebookLM，建立查詢資料庫。
-
 <img width="3831" height="2088" alt="image" src="https://github.com/user-attachments/assets/e3008cb3-5abe-4073-b498-2ea648d2fd0b" />
-
-
 <img width="3837" height="2080" alt="image" src="https://github.com/user-attachments/assets/a7d8e42f-4f0c-45e4-96ed-8d1c229dc775" />
-
 
 ## 如何使用[Obsidian]
 1. 安裝 [Obsidian](https://obsidian.md)。
@@ -34,7 +27,8 @@
 - 教育部性別平等教育全球資訊網「函釋目錄」(<https://www.gender.edu.tw>)
 - 全國法規資料庫、教育部主管法規共用系統等公開法規來源
 
-## 著作權與授權
+## 著作權、授權與更新
 - **函釋與法規本文**屬政府公文，依《著作權法》第 9 條不得為著作權之標的。
 - 本專案的**整理、結構、概念詞表與維護腳本**以 [MIT License](LICENSE) 釋出。
 - 資料由公開來源整理，OCR 與人工編修可能有誤；正式引用請以官方原文為準，本庫僅供檢索參考。
+- 資料夾內容可能並非最新，請使用前再注意更新時間，以免使用到舊版資料
